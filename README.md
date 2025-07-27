@@ -34,5 +34,5 @@ A smart BMI calculator with:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/NirnayBasrur/Smart-BMI-Tracker.git
-   cd Smart-BMI-Tracker
+   git clone https://github.com/NirnayBasrur/BMI-Calculator-Project.git
+   cd BMI-Calculator-Project
