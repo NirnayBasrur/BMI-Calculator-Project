@@ -32,12 +32,12 @@ def get_bmi_category_and_color(bmi):
         return "Obese (Class II+)", "darkred"
 
 # ---------- Sidebar (Navigation) ----------
-st.sidebar.title("📌 Navigation")
+st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["BMI Calculator", "BMI History & Graph", "Chatbot (Local)"])
 
 # ---------- BMI Calculator Page ----------
 if page == "BMI Calculator":
-    st.title("🧮 Smart BMI Calculator")
+    st.title("Smart BMI Calculator")
     
     # User selection for multi-user support
     user_id = st.text_input("Enter your name or ID:", st.session_state.user_id)
@@ -60,7 +60,7 @@ if page == "BMI Calculator":
 
 # ---------- BMI History Page ----------
 elif page == "BMI History & Graph":
-    st.title("📊 BMI History & Trend")
+    st.title("BMI History & Trend")
     user_id = st.session_state.user_id
 
     if user_id not in st.session_state.bmi_data or not st.session_state.bmi_data[user_id]:
@@ -94,7 +94,7 @@ elif page == "BMI History & Graph":
 
 # ---------- Chatbot Page ----------
 elif page == "Chatbot (Local)":
-    st.title("💬 Smart Health Chatbot (Local)")
+    st.title("Smart Health Chatbot (Local)")
     prompt = st.text_input("Ask me anything about your BMI or health:")
     user_id = st.session_state.user_id
 
@@ -115,4 +115,4 @@ elif page == "Chatbot (Local)":
 
     if prompt:
         response = generate_response(prompt)
-        st.markdown(f"**🤖 Chatbot:** {response}")
+        st.markdown(f"**Chatbot:** {response}")
