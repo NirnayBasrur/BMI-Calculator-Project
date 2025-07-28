@@ -6,7 +6,7 @@ A smart BMI calculator with:
 - BMI visualization over time
 - CSV export of tracked data
 - Local health chatbot
-- Support for single-user tracking (multi-user coming soon)
+- Support for single-user tracking
 
 ---
 
