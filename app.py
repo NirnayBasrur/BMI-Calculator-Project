@@ -82,7 +82,7 @@ elif page == "BMI History & Graph":
         # Export to CSV
         csv = user_data.to_csv(index=False).encode('utf-8')
         st.download_button(
-            label="⬇️ Download BMI History as CSV",
+            label="Download BMI History as CSV",
             data=csv,
             file_name=f"{user_id}_bmi_history.csv",
             mime='text/csv'
